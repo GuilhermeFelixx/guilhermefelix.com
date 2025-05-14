@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | Guilherme Felix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',
+            secondary: '#f0f4ff'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body class="font-sans min-h-screen flex flex-col bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Topo -->
+  <header class="flex justify-between items-center px-8 py-4 border-b border-gray-300 dark:border-gray-700 text-sm">
+    <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-primary"></div>
+      <h1 class="font-bold">Guilherme Felix</h1>
+      <span class="text-gray-500 dark:text-gray-400">/ DEV | PROMPT ENGINEER | DESIGNER</span>
+    </div>
+    <nav class="space-x-6 text-sm font-medium">
+      <a href="index.html">PÁGINA INICIAL</a>
+      <a href="#" class="text-primary">SERVIÇOS</a>
+      <a href="https://www.behance.net/gui_felix" target="_blank">PROJETOS</a>
+      <a href="https://wa.me/5551995967187?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank">CONTATO</a>
+      <button id="theme-toggle" class="ml-4 px-3 py-1 rounded-full text-sm border border-primary text-primary hover:bg-primary hover:text-white transition">Modo Escuro</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="flex-1 py-20 px-6 md:px-16 bg-secondary dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Nossos Serviços</h2>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-12">Oferecemos soluções criativas e tecnológicas para posicionar sua marca no digital com autoridade.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Serviço 1 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-laptop-code text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Criação de Sites</h3>
+          <p class="text-sm">Sites modernos, responsivos e com foco em conversão. Ideal para empresas, portfólios e landing pages.</p>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-robot text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Consultoria em IA</h3>
+          <p class="text-sm">Ajudamos você a aplicar inteligência artificial no dia a dia para ganhar produtividade e vantagem competitiva.</p>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-bullhorn text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Marketing Digital</h3>
+          <p class="text-sm">Estratégias de redes sociais, tráfego pago, funis de vendas e automações para captar e nutrir clientes.</p>
+        </div>
+
+        <!-- Serviço 4 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-paint-brush text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Identidade Visual</h3>
+          <p class="text-sm">Criação de logotipos, paleta de cores, tipografia e manual de marca para posicionar seu negócio com estilo.</p>
+        </div>
+
+        <!-- Serviço 5 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-video text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Vídeos & Reels</h3>
+          <p class="text-sm">Edição de vídeos curtos, criativos e com storytelling que aumentam engajamento e vendem nas redes sociais.</p>
+        </div>
+
+        <!-- Serviço 6 -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <i class="fas fa-chart-line text-primary text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Consultoria Estratégica</h3>
+          <p class="text-sm">Análise e planejamento digital personalizado. Ajudamos você a traçar o caminho do crescimento.</p>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <a href="https://wa.me/5551995967187?text=Olá,%20gostaria%20de%20conhecer%20melhor%20os%20serviços%20de%20vocês!" target="_blank" class="bg-primary text-white px-6 py-3 rounded-full text-sm hover:opacity-90 transition">FALE COM A GENTE</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-sm py-10 px-8 border-t border-gray-300 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <p>Política de Cookies</p>
+        <p>Política de Privacidade</p>
+        <p class="mt-4">©️ 2025 por Guilherme Felix. <a href="https://guilhermefelix.com" class="underline">guilhermefelix.com</a></p>
+      </div>
+      <div>
+        <p class="font-semibold">Telefone</p>
+        <p>(51) 99596-7187</p>
+      </div>
+      <div>
+        <p class="font-semibold">Email</p>
+        <p>guilhermefellixx@gmail.com</p>
+        <p class="font-semibold mt-4">Redes sociais</p>
+        <div class="flex space-x-3 mt-2 text-gray-600 dark:text-gray-300 text-lg">
+          <a href="https://wa.me/5551995967187" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.behance.net/gui_felix" target="_blank"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para alternar tema -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+      toggleBtn.innerText = 'Modo Claro';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        toggleBtn.innerText = 'Modo Escuro';
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        toggleBtn.innerText = 'Modo Claro';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+
+</html>
