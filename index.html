@@ -22,6 +22,8 @@
       --card:#0f1113;
       --muted:#9ca3af;
       --glass: rgba(255,255,255,0.03);
+      --behance:#1769ff;
+      --behance-dark:#114dcc;
     }
     html,body { height:100%; }
     body{
@@ -39,7 +41,7 @@
       letter-spacing: 0.06em;
     }
 
-    /* Angled image containers (to mimic the slanted photos in your reference) */
+    /* Angled image containers */
     .slant {
       transform: skewX(-12deg);
       overflow: hidden;
@@ -82,7 +84,19 @@
       background: linear-gradient(90deg,var(--accent), #b21313);
       border: 1px solid rgba(255,255,255,0.04);
       box-shadow: 0 8px 30px rgba(211,27,27,0.12);
+      transition: transform .2s ease, box-shadow .2s ease;
     }
+    .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(211,27,27,0.18); }
+
+    /* Behance button */
+    .btn-behance {
+      background: linear-gradient(90deg, var(--behance), var(--behance-dark));
+      border: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 8px 28px rgba(23,105,255,0.22);
+      color: #fff;
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+    .btn-behance:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(23,105,255,0.32); filter: saturate(1.1); }
 
     /* small responsive tweaks for slanted images */
     @media (max-width: 768px){
@@ -104,7 +118,6 @@
   <header class="w-full border-b border-gray-800">
     <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
-        <!-- small logo square inspired by reference -->
         <div class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-md">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="6" height="3" rx="0.5" fill="white"/><rect x="10" y="6" width="8" height="3" rx="0.5" fill="white"/><rect x="2" y="12" width="6" height="3" rx="0.5" fill="white"/></svg>
         </div>
@@ -147,18 +160,14 @@
       </div>
     </section>
 
-    <!-- TEAM / SOBRE (mimic composition from image) -->
+    <!-- TEAM / SOBRE -->
     <section id="sobre" class="py-12">
-      <!-- Desktop: 3 columns layout -->
       <div class="hidden md:grid md:grid-cols-5 gap-8 items-start">
-        <!-- left text - Guilherme -->
         <div class="col-span-1 flex items-center">
           <p class="text-base text-gray-300 leading-relaxed">CEO e especialista em prompt engineering e IA; video maker e tráfego pago orientado à performance, com testes rápidos e criativos de alto impacto.</p>
         </div>
 
-        <!-- middle images -->
         <div class="col-span-3 flex justify-center items-start gap-6">
-          <!-- Guilherme image -->
           <div class="flex flex-col items-center">
             <div class="w-72 h-96 slant relative">
               <div class="absolute left-3 top-3 num-badge z-10">1</div>
@@ -171,7 +180,6 @@
             </div>
           </div>
 
-          <!-- Pâmela image -->
           <div class="flex flex-col items-center">
             <div class="w-72 h-96 slant relative">
               <div class="absolute left-3 top-3 num-badge z-10">2</div>
@@ -185,15 +193,12 @@
           </div>
         </div>
 
-        <!-- right text - Pâmela -->
         <div class="col-span-1 flex items-center">
           <p class="text-base text-gray-300 leading-relaxed">Social media com foco em Instagram: estratégia, calendário editorial, carrosséis e Reels com mensagens claras e visuais consistentes; formada em Marketing e fotógrafa profissional, com curso oficial da Kodak.</p>
         </div>
       </div>
 
-      <!-- Mobile: stacked layout -->
       <div class="md:hidden space-y-8">
-        <!-- Guilherme -->
         <div class="text-center">
           <div class="flex justify-center mb-4">
             <div class="w-64 h-80 slant relative">
@@ -209,7 +214,6 @@
           <p class="text-base text-gray-300 px-4 leading-relaxed">CEO e especialista em prompt engineering e IA; video maker e tráfego pago orientado à performance, com testes rápidos e criativos de alto impacto.</p>
         </div>
 
-        <!-- Pâmela -->
         <div class="text-center">
           <div class="flex justify-center mb-4">
             <div class="w-64 h-80 slant relative">
@@ -267,29 +271,93 @@
     <section id="portfolio" class="py-14">
       <h3 class="text-3xl font-bold text-center mb-8">PORTFÓLIO</h3>
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Replace images with real work -->
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto1.jpg" alt="Projeto 1" class="w-full h-56 object-cover">
+          <img src="images/p1.png" alt="Projeto 1" loading="lazy" class="w-full h-56 object-cover">
         </div>
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto2.jpg" alt="Projeto 2" class="w-full h-56 object-cover">
+          <img src="images/p2.png" alt="Projeto 2" loading="lazy" class="w-full h-56 object-cover">
         </div>
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto3.jpg" alt="Projeto 3" class="w-full h-56 object-cover">
+          <img src="images/p3.png" alt="Projeto 3" loading="lazy" class="w-full h-56 object-cover">
         </div>
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto4.jpg" alt="Projeto 4" class="w-full h-56 object-cover">
+          <img src="images/p4.png" alt="Projeto 4" loading="lazy" class="w-full h-56 object-cover">
         </div>
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto5.jpg" alt="Projeto 5" class="w-full h-56 object-cover">
+          <img src="images/p5.png" alt="Projeto 5" loading="lazy" class="w-full h-56 object-cover">
         </div>
         <div class="rounded-xl overflow-hidden border border-gray-800 pf-hover bg-gray-900/50">
-          <img src="/img/projeto6.jpg" alt="Projeto 6" class="w-full h-56 object-cover">
+          <img src="images/p6.png" alt="Projeto 6" loading="lazy" class="w-full h-56 object-cover">
         </div>
+      </div>
+
+      <!-- Botão Behance: "Ver mais" -->
+      <div class="mt-8 flex justify-center">
+        <a href="https://www.behance.net/gui_felix" target="_blank" rel="noopener" aria-label="Ver mais projetos no Behance"
+           class="btn-behance inline-flex items-center gap-3 rounded-md px-6 py-3 font-semibold">
+          <img src="https://cdn.simpleicons.org/behance/FFFFFF" width="22" height="22" alt="Behance" loading="lazy" class="opacity-95" />
+          <span>Ver mais no Behance</span>
+        </a>
       </div>
     </section>
 
-    <!-- CASES / PROCESSOS (opcional detalhamento) -->
+    <!-- PERFIS ADMINISTRADOS -->
+    <section id="social-proof" class="py-12">
+      <h3 class="text-3xl font-bold text-center mb-8">Perfis administrados</h3>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- X / @guikrypto -->
+        <article class="bg-gradient-to-br from-black/30 to-transparent border border-gray-800 rounded-2xl p-6 pf-hover">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="p-3 rounded-md bg-white/5">
+              <!-- X logo -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M18.5 2L13 8.2L20.5 22H14.9L10.7 15.3L5.6 22H2L8 14.7L3.1 2H8.7L12.6 8.9L17.1 2H18.5Z" fill="white" opacity="0.95"/>
+              </svg>
+            </div>
+            <div>
+              <a href="https://x.com/guikrypto" target="_blank" rel="noopener" class="text-white font-semibold hover:underline">@guikrypto</a>
+              <p class="text-sm text-gray-400">Conteúdo sobre Bitcoin e criptomoedas</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-sm">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-gray-800 text-gray-200">
+              <i data-feather="users" class="w-4 h-4"></i>
+              2,1k seguidores orgânicos
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-gray-800 text-gray-300">
+              <i data-feather="trending-up" class="w-4 h-4"></i>
+              Social media e marketing
+            </span>
+          </div>
+        </article>
+
+        <!-- Instagram / @pamleitora -->
+        <article class="bg-gradient-to-br from-black/30 to-transparent border border-gray-800 rounded-2xl p-6 pf-hover">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="p-3 rounded-md bg-white/5">
+              <i data-feather="instagram" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <a href="https://instagram.com/pamleitora" target="_blank" rel="noopener" class="text-white font-semibold hover:underline">@pamleitora</a>
+              <p class="text-sm text-gray-400">Perfil literário e comunidade de leitores</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-sm">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-gray-800 text-gray-200">
+              <i data-feather="users" class="w-4 h-4"></i>
+              13,5k seguidores orgânicos
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-gray-800 text-gray-300">
+              <i data-feather="award" class="w-4 h-4"></i>
+              Estratégia e conteúdo
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASES / PROCESSOS -->
     <section class="py-12">
       <div class="bg-gradient-to-br from-white/3 to-transparent border border-gray-800 rounded-2xl p-6 text-gray-300">
         <h4 class="font-semibold text-xl mb-3">Nosso Processo</h4>
@@ -320,7 +388,6 @@
           </div>
         </div>
 
-        <!-- Formspree Form -->
         <form id="contactForm" action="https://formspree.io/f/mdkpzpvp" method="POST" class="mt-6 grid gap-4">
           <div class="grid sm:grid-cols-2 gap-4">
             <input name="name" required placeholder="Seu nome" class="p-3 rounded-md bg-black/60 border border-gray-800 text-white" />
@@ -337,7 +404,6 @@
           <div id="formMsg" class="text-sm text-gray-300 mt-2"></div>
         </form>
 
-        <!-- Direct contacts -->
         <div class="mt-8 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-start gap-4">
           <div>
             <p class="text-gray-400">WhatsApp</p>
@@ -394,7 +460,6 @@
     form && form.addEventListener('submit', async (e) => {
       e.preventDefault();
       
-      // Show loading message
       formMsg.textContent = 'Enviando mensagem...';
       formMsg.style.color = '#9ca3af';
       
@@ -404,9 +469,7 @@
         const response = await fetch(form.action, {
           method: 'POST',
           body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
+          headers: { 'Accept': 'application/json' }
         });
         
         if (response.ok) {
