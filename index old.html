@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Felix - Social Media & Design em São Leopoldo RS | Feitoria</title>
+    <meta name="description" content="Social Media Manager e Designer Gráfico em São Leopoldo RS. Atendo Feitoria, Centro, Scharlau e região do Vale dos Sinos. Transformo sua marca digital.">
+    <meta name="keywords" content="social media são leopoldo, design gráfico feitoria, marketing digital vale dos sinos, redes sociais são leopoldo rs">
+    <meta name="author" content="Guilherme Felix">
+    <meta name="geo.region" content="BR-RS">
+    <meta name="geo.placename" content="São Leopoldo">
+    <meta name="geo.position" content="-29.7567;-51.1472">
+    <meta name="ICBM" content="-29.7567, -51.1472">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#475569',
+                        accent: '#06b6d4',
+                        warm: '#f97316',
+                        neutral: '#f8fafc'
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'glow': 'glow 2s ease-in-out infinite alternate'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Schema Markup Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Guilherme Felix - Social Media & Design",
+      "description": "Social Media Manager e Designer Gráfico especializado em empresas de São Leopoldo e região do Vale dos Sinos",
+      "url": "https://guilhermefelix.com.br",
+      "telephone": "+55-51-99596-7187",
+      "email": "guilhermefellixx@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Leopoldo",
+        "addressRegion": "RS",
+        "addressCountry": "BR",
+        "postalCode": "93032"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -29.7567,
+        "longitude": -51.1472
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "São Leopoldo"
+        },
+        {
+          "@type": "City", 
+          "name": "Novo Hamburgo"
+        },
+        {
+          "@type": "City",
+          "name": "Portão"
+        },
+        {
+          "@type": "City",
+          "name": "Estância Velha"
+        }
+      ],
+      "serviceType": ["Social Media Marketing", "Design Gráfico", "Marketing Digital", "Gestão de Redes Sociais"],
+      "priceRange": "$$",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.behance.net/gui_felix",
+        "https://wa.me/5551995967187"
+      ]
+    }
+    </script>
+    
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(6, 182, 212, 0.3); }
+            to { box-shadow: 0 0 30px rgba(6, 182, 212, 0.6); }
+        }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+
+<body class="bg-neutral dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-display">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-8 bg-gradient-to-b from-accent to-warm rounded-full"></div>
+                    <span class="text-xl font-bold tracking-tight">Guilherme Felix</span>
+                    <span class="hidden sm:block text-xs bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded text-slate-600 dark:text-slate-400">
+                        São Leopoldo RS
+                    </span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-accent transition-colors">Início</a>
+                    <a href="#work" class="hover:text-accent transition-colors">Trabalhos</a>
+                    <a href="#services" class="hover:text-accent transition-colors">Serviços</a>
+                    <a href="#local" class="hover:text-accent transition-colors">Atendimento</a>
+                    <a href="#about" class="hover:text-accent transition-colors">Sobre</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-slate-700 transition-all">
+                        Conversar
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center space-x-3">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="p-2">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <button id="theme-toggle-desktop" class="hidden md:block p-2 ml-4 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#home" class="block hover:text-accent transition-colors">Início</a>
+                <a href="#work" class="block hover:text-accent transition-colors">Trabalhos</a>
+                <a href="#services" class="block hover:text-accent transition-colors">Serviços</a>
+                <a href="#local" class="block hover:text-accent transition-colors">Atendimento</a>
+                <a href="#about" class="block hover:text-accent transition-colors">Sobre</a>
+                <a href="#contact" class="block bg-primary text-white px-4 py-2 rounded-lg text-center">Conversar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER O MEU VEÍCULO - NOVO -->
+    <section class="pt-20 bg-gradient-to-r from-red-600 via-red-500 to-orange-500">
+        <div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold">
+                        <span>🚗</span>
+                        <span>Novo WebApp Lançado!</span>
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-6xl font-black leading-tight">
+                        O Meu Veículo
+                    </h2>
+                    
+                    <p class="text-xl md:text-2xl text-white/90 leading-relaxed">
+                        Plataforma completa para encontrar e anunciar veículos no Vale dos Sinos. 
+                        Conectando compradores e vendedores da região.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://omeuveiculo.com.br/" target="_blank" class="group bg-white text-red-600 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2 shadow-xl">
+                            <span>Acessar O Meu Veículo</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="https://omeuveiculo.com.br/" target="_blank" class="border-2 border-white/50 text-white px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all inline-flex items-center justify-center space-x-2">
+                            <span>Saiba Mais</span>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center space-x-8 pt-6">
+                        <div>
+                            <div class="text-3xl font-black">100%</div>
+                            <div class="text-sm text-white/80">Gratuito</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-black">Vale dos Sinos</div>
+                            <div class="text-sm text-white/80">Região atendida</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative hidden lg:block">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-car text-red-600 text-xl"></i>
+                                </div>
+                                <div class="text-white">
+                                    <div class="font-bold text-lg">Anúncios Ilimitados</div>
+                                    <div class="text-sm text-white/80">Publique quantos veículos quiser</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-search text-red-600 text-xl"></i>
+                                </div>
+                                <div class="text-white">
+                                    <div class="font-bold text-lg">Busca Inteligente</div>
+                                    <div class="text-sm text-white/80">Encontre o veículo ideal rapidamente</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+                                </div>
+                                <div class="text-white">
+                                    <div class="font-bold text-lg">Foco Regional</div>
+                                    <div class="text-sm text-white/80">Especializado no Vale dos Sinos</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-white to-cyan-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 pt-20">
+        <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Content -->
+            <div class="space-y-8">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-full text-sm">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span>📍 Atendendo São Leopoldo e Vale dos Sinos</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-black leading-tight text-shadow">
+                        <span class="text-accent">Social Media</span> e <span class="text-warm">Design</span> em
+                        <span class="bg-gradient-to-r from-accent via-cyan-500 to-warm bg-clip-text text-transparent">
+                            São Leopoldo
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg">
+                        Especialista em Social Media e Design Gráfico para empresas de São Leopoldo, Feitoria e região do Vale dos Sinos. 
+                        Conteúdo estratégico que engaja e transforma sua presença digital.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="group bg-primary text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center space-x-2 hover:bg-slate-700 transition-all transform hover:scale-105">
+                        <span>Transformar Redes Sociais</span>
+                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#work" class="border-2 border-slate-200 dark:border-slate-700 px-8 py-4 rounded-2xl font-semibold hover:border-accent hover:text-accent transition-all text-center">
+                        Ver trabalhos
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex items-center space-x-6 pt-8">
+                    <span class="text-sm text-slate-500">Me encontre em:</span>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/5551995967187" class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.behance.net/gui_felix" class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-pink-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual -->
+            <div class="relative">
+                <div class="relative z-10 animate-float">
+                    <!-- Main Card -->
+                    <div class="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-8 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="images/profile.jpg" alt="Guilherme Felix - Social Media Manager em São Leopoldo" class="w-16 h-16 rounded-2xl object-cover">
+                            <div>
+                                <h3 class="font-bold text-lg">Guilherme Felix</h3>
+                                <p class="text-slate-500 text-sm">Social Media Manager - São Leopoldo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-slate-50 dark:bg-slate-700 p-4 rounded-2xl text-center">
+                                <div class="text-2xl font-bold text-accent">13,5 mil+</div>
+                                <div class="text-xs text-slate-500">Seguidores orgânicos (IG)</div>
+                            </div>
+                            <div class="bg-slate-50 dark:bg-slate-700 p-4 rounded-2xl text-center">
+                                <div class="text-2xl font-bold text-warm">5+</div>
+                                <div class="text-xs text-slate-500">Anos no RS</div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-pink-500 rounded-full"></div>
+                                <span class="text-sm">Social Media Manager</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                <span class="text-sm">Designer Gráfico</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                <span class="text-sm">Estrategista Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-accent to-cyan-400 rounded-2xl flex items-center justify-center text-white text-2xl animate-glow">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-warm to-orange-400 rounded-2xl flex items-center justify-center text-white animate-float" style="animation-delay: 1s;">
+                    <i class="fas fa-palette"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Attendance Section (SIMPLIFICADA) -->
+    <section id="local" class="py-20 bg-gradient-to-r from-slate-50 to-cyan-50 dark:from-slate-800 dark:to-slate-700">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Atendimento em São Leopoldo e Região</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                    Social Media e Design para empresas do Vale dos Sinos. Conheço a região e entendo as necessidades do mercado local.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg">
+                    <h3 class="font-bold mb-6 text-pink-500 text-xl">📍 Principais Bairros</h3>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <div class="space-y-2">
+                            <p>• <strong>Feitoria</strong></p>
+                            <p>• Centro</p>
+                            <p>• Scharlau</p>
+                            <p>• Jardim América</p>
+                            <p>• Morro do Espelho</p>
+                            <p>• São José</p>
+                            <p>• Rio Branco</p>
+                            <p>• Cristo Rei</p>
+                        </div>
+                        <div class="space-y-2">
+                            <p>• Santo André</p>
+                            <p>• Campestre</p>
+                            <p>• Campina</p>
+                            <p>• Santos Dumont</p>
+                            <p>• São Miguel</p>
+                            <p>• Vicentina</p>
+                            <p>• Pinheiro</p>
+                            <p>• Santa Teresa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg">
+                    <h3 class="font-bold mb-6 text-purple-500 text-xl">🏙️ Cidades Atendidas</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i>São Leopoldo</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i>Novo Hamburgo</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i>Portão</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i>Estância Velha</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-purple-500 mr-2"></i>Sapucaia do Sul</li>
+                        <li class="flex items-center"><i class="fas fa-globe text-purple-500 mr-2"></i>Vale dos Sinos</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-lg">
+                    <h3 class="font-bold mb-6 text-cyan-500 text-xl">🎯 Especialidades Locais</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center"><i class="fas fa-store text-cyan-500 mr-2"></i>Comércio Local</li>
+                        <li class="flex items-center"><i class="fas fa-industry text-cyan-500 mr-2"></i>Empresas do Vale</li>
+                        <li class="flex items-center"><i class="fas fa-rocket text-cyan-500 mr-2"></i>Startups da Região</li>
+                        <li class="flex items-center"><i class="fas fa-user-tie text-cyan-500 mr-2"></i>Profissionais Liberais</li>
+                        <li class="flex items-center"><i class="fas fa-utensils text-cyan-500 mr-2"></i>Restaurantes</li>
+                        <li class="flex items-center"><i class="fas fa-graduation-cap text-cyan-500 mr-2"></i>Educação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIS ADMINISTRADOS - SEÇÃO REVISADA (SEM IA) -->
+    <section class="py-20 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black mb-4">
+                    Perfis que <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Administramos</span>
+                </h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Crescimento 100% orgânico conquistado com estratégia, consistência e conteúdo de qualidade
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Instagram Card -->
+                <div class="group relative bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <!-- Gradient Header -->
+                    <div class="h-32 bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-600 relative">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <i class="fab fa-instagram text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Content -->
+                    <div class="p-8 -mt-12 relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                            <i class="fab fa-instagram text-white text-3xl"></i>
+                        </div>
+                        
+                        <h3 class="text-2xl font-black mb-2">@PamLeitora</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Instagram • Perfil Literário</p>
+                        
+                        <div class="bg-gradient-to-br from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20 p-6 rounded-2xl mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-slate-600 dark:text-slate-400">Seguidores Orgânicos</span>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span class="text-xs text-green-600 dark:text-green-400 font-semibold">Ativo</span>
+                                </div>
+                            </div>
+                            <div class="text-4xl font-black bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                                13,5 mil+
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+                                Crescimento 100% orgânico
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-book text-pink-500"></i>
+                                <span>Conteúdo literário</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-chart-line text-purple-500"></i>
+                                <span>Engajamento consistente</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-heart text-pink-500"></i>
+                                <span>Comunidade ativa</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hover Effect Border -->
+                    <div class="absolute inset-0 border-4 border-transparent group-hover:border-pink-500/50 rounded-3xl transition-all duration-300 pointer-events-none"></div>
+                </div>
+
+                <!-- X/Twitter Card -->
+                <div class="group relative bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <!-- Gradient Header -->
+                    <div class="h-32 bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-600 relative">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <i class="fab fa-x-twitter text-white text-2xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Content -->
+                    <div class="p-8 -mt-12 relative z-10">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                            <i class="fab fa-x-twitter text-white text-3xl"></i>
+                        </div>
+                        
+                        <h3 class="text-2xl font-black mb-2">
+                            <i class="fab fa-x-twitter text-blue-500 mr-2"></i>@guikrypto
+                        </h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">X (Twitter) • Bitcoin & Cripto</p>
+                        
+                        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-2xl mb-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-slate-600 dark:text-slate-400">Seguidores Orgânicos</span>
+                                <div class="flex items-center space-x-1">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span class="text-xs text-green-600 dark:text-green-400 font-semibold">Ativo</span>
+                                </div>
+                            </div>
+                            <div class="text-4xl font-black bg-gradient-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent">
+                                2,1 mil+
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+                                Crescimento 100% orgânico
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fab fa-bitcoin text-blue-500"></i>
+                                <span>Bitcoin e criptomoedas</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-comments text-cyan-500"></i>
+                                <span>Discussões técnicas</span>
+                            </div>
+                            <div class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-chart-line text-blue-500"></i>
+                                <span>Análises de mercado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hover Effect Border -->
+                    <div class="absolute inset-0 border-4 border-transparent group-hover:border-blue-500/50 rounded-3xl transition-all duration-300 pointer-events-none"></div>
+                </div>
+            </div>
+
+            <!-- Stats Summary -->
+            <div class="mt-12 bg-white dark:bg-slate-800 rounded-3xl p-8 max-w-4xl mx-auto shadow-lg">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-black bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">
+                            15,6 mil+
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Total de seguidores orgânicos</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black bg-gradient-to-r from-green-500 to-teal-500 bg-clip-text text-transparent mb-2">
+                            2 perfis
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Plataformas administradas</p>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-black bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent mb-2">
+                            100%
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Crescimento orgânico</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700 text-center">
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        Números públicos e verificáveis diretamente nos perfis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section id="work" class="py-24 bg-slate-50 dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Trabalhos em Destaque</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300">Projetos que transformaram marcas locais</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Project Showcase -->
+                <div class="relative group">
+                    <div class="bg-gradient-to-br from-accent to-cyan-600 p-8 rounded-3xl relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white mb-2">Sorteios Online</h3>
+                                    <p class="text-cyan-100">Plataforma + Social Media Strategy</p>
+                                </div>
+                                <i class="fas fa-gift text-white text-3xl"></i>
+                            </div>
+                            <p class="text-cyan-100 mb-6">
+                                Sistema completo de sorteios online com estratégia de social media integrada, 
+                                gerando engajamento massivo e crescimento orgânico.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Social Media</span>
+                                <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Design</span>
+                                <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                            </div>
+                            <a href="https://sorteiosonline.com.br" target="_blank" class="inline-flex items-center space-x-2 bg-white text-accent px-6 py-3 rounded-xl font-semibold hover:bg-slate-50 transition-all">
+                                <span>Ver projeto</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Details -->
+                <div class="space-y-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-3">Processo de Criação</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-1">1</div>
+                                <div>
+                                    <p class="font-semibold">Estratégia Regional</p>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Análise do mercado local e criação de persona do Vale dos Sinos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-1">2</div>
+                                <div>
+                                    <p class="font-semibold">Design & Conteúdo</p>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Criação de identidade visual e posts para redes sociais</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-1">3</div>
+                                <div>
+                                    <p class="font-semibold">Gestão & Resultados</p>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Execução da estratégia e otimização contínua</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-700 p-6 rounded-2xl">
+                        <h5 class="font-bold mb-3">Resultados Alcançados</h5>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-2xl font-bold text-pink-500">+1000</div>
+                                <div class="text-sm text-slate-600 dark:text-slate-400">Acessos</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-purple-500">100%</div>
+                                <div class="text-sm text-slate-600 dark:text-slate-400">+ Engajamento</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-white dark:bg-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4">Como Posso Transformar Sua Marca</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Serviços especializados em social media e design que geram resultados reais para empresas de São Leopoldo
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 - Social Media (ESPECIALISTA) -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border-2 border-pink-500 dark:border-pink-500 hover:shadow-2xl hover:border-pink-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-share-alt text-white text-xl"></i>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <h3 class="text-xl font-bold">Social Media</h3>
+                        <span class="ml-2 bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-bold">ESPECIALISTA</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Gestão completa das suas redes sociais com estratégias focadas no público de São Leopoldo e região do Vale dos Sinos.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-pink-500 rounded-full mr-3 flex-shrink-0"></i>Criação de conteúdo visual</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-pink-500 rounded-full mr-3 flex-shrink-0"></i>Gestão Instagram/TikTok</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-pink-500 rounded-full mr-3 flex-shrink-0"></i>Stories e Reels criativos</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 - Design Gráfico (PRINCIPAL) -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border-2 border-purple-500 dark:border-purple-500 hover:shadow-2xl hover:border-purple-500 transition-all duration-300 transform hover:scale-105">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-palette text-white text-xl"></i>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <h3 class="text-xl font-bold">Design Gráfico</h3>
+                        <span class="ml-2 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-bold">PRINCIPAL</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Identidade visual completa e materiais gráficos que fazem sua marca se destacar no mercado leopoldense.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-purple-500 rounded-full mr-3 flex-shrink-0"></i>Identidade visual completa</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-purple-500 rounded-full mr-3 flex-shrink-0"></i>Posts para redes sociais</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-purple-500 rounded-full mr-3 flex-shrink-0"></i>Materiais gráficos</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 - Estratégia Digital -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl hover:border-accent/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estratégia Digital</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Planejamento estratégico focado no mercado local de São Leopoldo e crescimento nas redes sociais.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></i>Análise de concorrência local</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></i>Planejamento de conteúdo</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-green-500 rounded-full mr-3 flex-shrink-0"></i>Growth hacking regional</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 - Conteúdo Audiovisual -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl hover:border-accent/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-video text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Conteúdo Audiovisual</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Criação de vídeos, reels e motion graphics que conectam com o público local do Vale dos Sinos.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></i>Reels para Instagram</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></i>Motion graphics</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-yellow-500 rounded-full mr-3 flex-shrink-0"></i>Edição profissional</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 - Sites & Landing Pages (PROFISSIONAL) -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-all duration-300 opacity-90">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+                        <i class="fas fa-laptop-code text-white text-xl"></i>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <h3 class="text-xl font-bold">Sites & Landing Pages</h3>
+                        <span class="ml-2 bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs font-bold">PROFISSIONAL</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
+                        Sites simples e landing pages para complementar sua estratégia digital (projetos menores).
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-blue-400 rounded-full mr-3 flex-shrink-0"></i>Landing pages</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-blue-400 rounded-full mr-3 flex-shrink-0"></i>Sites institucionais</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-blue-400 rounded-full mr-3 flex-shrink-0"></i>SEO local</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 - IA para Social Media -->
+                <div class="group bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl hover:border-accent/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">IA para Social Media</h3>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                        Implementação de inteligência artificial para otimizar criação de conteúdo e automação.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="w-4 h-4 bg-indigo-500 rounded-full mr-3 flex-shrink-0"></i>Criação de conteúdo com IA</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-indigo-500 rounded-full mr-3 flex-shrink-0"></i>Automação de posts</li>
+                        <li class="flex items-center"><i class="w-4 h-4 bg-indigo-500 rounded-full mr-3 flex-shrink-0"></i>Chatbots para redes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-slate-50 dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-black mb-6">Olá, eu sou o Guilherme</h2>
+                    <div class="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                        <p>
+                            Sou um <strong class="text-slate-900 dark:text-white">Social Media Manager e Designer</strong> especializado em 
+                            empresas de São Leopoldo e região do Vale dos Sinos.
+                        </p>
+                        <p>
+                            Com mais de <strong class="text-accent">5 anos</strong> criando campanhas que geram resultados no RS, 
+                            conheço as particularidades do mercado local e sei como conectar marcas com o público leopoldense.
+                        </p>
+                        <p>
+                            Moro na região e trabalho diretamente com empresas do <strong class="text-warm">bairro Feitoria</strong>, 
+                            Centro, Scharlau e demais localidades de São Leopoldo, oferecendo atendimento personalizado.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-1">2 perfis</div>
+                            <div class="text-slate-600 dark:text-slate-400">Administrados (IG + X)</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-warm mb-1">15,6 mil+</div>
+                            <div class="text-slate-600 dark:text-slate-400">Seguidores orgânicos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-600 p-8 rounded-3xl">
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                                <span class="font-semibold">Atualmente trabalhando em:</span>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Campanhas Social Media</span>
+                                        <span class="text-sm text-slate-500">Em andamento</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-600 rounded-full h-2">
+                                        <div class="bg-pink-500 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Novo SaaS</span>
+                                        <span class="text-sm text-slate-500">Em desenvolvimento</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl">
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="font-semibold">Identidades Visuais</span>
+                                        <span class="text-sm text-slate-500">Criação</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-600 rounded-full h-2">
+                                        <div class="bg-purple-500 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-300 dark:border-slate-600">
+                                <p class="text-sm italic text-slate-600 dark:text-slate-400">
+                                    "Cada projeto é uma oportunidade de fortalecer o Vale dos Sinos"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black mb-6">Vamos Transformar Suas Redes Sociais em São Leopoldo?</h2>
+            <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
+                Estou aqui em São Leopoldo, pronto para criar estratégias de social media que fazem sua marca se destacar no Vale dos Sinos. 
+                Vamos conversar sobre seu projeto!
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="glass-effect p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">WhatsApp</h3>
+                    <p class="text-slate-300 text-sm mb-3">Resposta rápida - São Leopoldo</p>
+                    <a href="https://wa.me/5551995967187" class="text-accent hover:text-cyan-300 font-semibold">(51) 99596-7187</a>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Email</h3>
+                    <p class="text-slate-300 text-sm mb-3">Para projetos formais</p>
+                    <a href="mailto:guilhermefellixx@gmail.com" class="text-accent hover:text-cyan-300 font-semibold">guilhermefellixx@gmail.com</a>
+                </div>
+
+                <div class="glass-effect p-6 rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Localização</h3>
+                    <p class="text-slate-300 text-sm mb-3">Atendimento presencial</p>
+                    <span class="text-accent font-semibold">Feitoria - São Leopoldo/RS</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5551995967187" class="bg-white text-primary px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Conversar Agora</span>
+                </a>
+                <a href="mailto:guilhermefellixx@gmail.com" class="border-2 border-white/20 px-8 py-4 rounded-2xl font-bold hover:border-white/40 transition-all inline-flex items-center justify-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>Enviar email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-2 h-8 bg-gradient-to-b from-accent to-warm rounded-full"></div>
+                        <span class="text-xl font-bold text-white">Guilherme Felix</span>
+                    </div>
+                    <p class="text-slate-400 mb-6 max-w-sm">
+                        Social Media Manager & Designer em São Leopoldo RS. Especializado em transformar marcas digitais no Vale dos Sinos.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/5551995967187" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.behance.net/gui_felix" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-blue-500 transition-colors">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-pink-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Serviços Principais</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Social Media São Leopoldo</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Design Gráfico Feitoria</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Marketing Vale dos Sinos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Estratégia Digital RS</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contato Local</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fab fa-whatsapp mr-2"></i>(51) 99596-7187</li>
+                        <li><i class="fas fa-envelope mr-2"></i>guilhermefellixx@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>São Leopoldo - RS</li>
+                        <li><i class="fas fa-clock mr-2"></i>Segunda a Sexta: 8h às 18h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>© 2025 Guilherme Felix - Social Media & Design em São Leopoldo RS. Todos os direitos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+                    <a href="#" class="hover:text-white transition-colors">Termos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Theme toggle
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
+        const html = document.documentElement;
+
+        function toggleTheme() {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        }
+
+        themeToggleMobile.addEventListener('click', toggleTheme);
+        themeToggleDesktop.addEventListener('click', toggleTheme);
+
+        // Check for saved theme
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-effect');
+            } else {
+                navbar.classList.remove('glass-effect');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GW7JVCNTKL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GW7JVCNTKL');
+</script>
+
+    
+</body>
+</html>
